@@ -1,4 +1,4 @@
-# OLA Ride Booking Data Analysis Project
+# UBER Ride Booking Data Analysis Project
 
 This project simulates and analyses over **1,00,000+ UBER ride booking records** for Bengaluru, focusing on ride success rates, cancellation patterns, customer behaviour, and revenue trends.
 
