@@ -17,13 +17,6 @@ This project analyses over **100,000 simulated UBER ride bookings** in Bengaluru
 - **Cash and UPI** are top payment methods
 - Average customer and driver ratings are near **4.0**
 
-## Final Analysis
-- Analysed 100K+ UBER ride records using SQL & Power BI to identify booking success rate (62%), cancellation patterns (7% by customers, 18% by drivers), and peak demand periods
-- Built 10+ SQL queries and 5+ Power BI dashboards to visualise booking trends, cancellation reasons, and customer-driver ratings.
-- Derived insights on revenue impact of weekends & match days, highlighting up to 30% higher bookings during peak periods.
-- Optimised reporting by creating SQL views for top customers, vehicle-wise ride distances, and incomplete ride reasons.
-
-
 ## Visualisations Preview
 
 | Overall Bookings & Status | Vehicle-wise Analysis |
@@ -40,6 +33,13 @@ This project analyses over **100,000 simulated UBER ride bookings** in Bengaluru
 - **Task:** Analyse a dataset of **100K+ rides** to extract insights on booking trends, cancellations, and ratings.
 - **Action:** Built SQL queries and Power BI dashboards for insights on bookings, customer ratings, cancellations, and revenue.
 - **Result:** Provided actionable data visualisations revealing customer patterns, peak periods, and business insights.
+
+
+## Final Analysis
+- Analysed 100K+ UBER ride records using SQL & Power BI to identify booking success rate (62%), cancellation patterns (7% by customers, 18% by drivers), and peak demand periods
+- Built 10+ SQL queries and 5+ Power BI dashboards to visualise booking trends, cancellation reasons, and customer-driver ratings.
+- Derived insights on revenue impact of weekends & match days, highlighting up to 30% higher bookings during peak periods.
+- Optimised reporting by creating SQL views for top customers, vehicle-wise ride distances, and incomplete ride reasons.
 
 ---
 
