@@ -1,0 +1,204 @@
+table 'uber bookings'
+	lineageTag: 01e852d3-3324-4ef4-8175-426c4ca021b5
+
+	measure CanceledBookings = CALCULATE(COUNTROWS('uber bookings'), 'uber bookings'[Booking_Status] IN {"Canceled by Driver", "Canceled by Customer"})
+		formatString: 0
+		lineageTag: 15503fe7-a036-4cfe-9722-c53f08109c2c
+
+	measure TotalBookings = COUNTROWS('uber bookings')
+		formatString: 0
+		lineageTag: 8d102d67-083e-4dd6-b994-58c534678212
+
+	measure CanceledBookingPercentage = FORMAT(DIVIDE([CanceledBookings], [TotalBookings], 0), "0.00%")
+		lineageTag: cc7c8945-7252-4127-8bc9-70831e31623f
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f570f9b5-e671-4fb1-9107-14d988ae450a
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: bdc180f8-ba74-43ce-9fa4-b305236a4cbd
+			defaultHierarchy: LocalDateTable_bc16e1a8-bd53-4c50-8080-78b8ef6aaa23.'Date Hierarchy'
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Time
+		dataType: string
+		lineageTag: b42552a4-1a63-4797-81b0-3fb7de41b73a
+		summarizeBy: none
+		sourceColumn: Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column Booking_ID
+		dataType: string
+		lineageTag: 48bb5901-74ce-44b9-b5ad-c4ab31ef0574
+		summarizeBy: none
+		sourceColumn: Booking_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Booking_Status
+		dataType: string
+		lineageTag: d51124e7-74e2-442e-999d-8f7f6f7ffb1d
+		summarizeBy: none
+		sourceColumn: Booking_Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Customer_ID
+		dataType: string
+		lineageTag: aaa2d074-8fd4-4cf7-bef6-cca94393eb18
+		summarizeBy: none
+		sourceColumn: Customer_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Vehicle_Type
+		dataType: string
+		lineageTag: e1ef1962-28f9-4cb2-84c5-b1da4e2f2d28
+		summarizeBy: none
+		sourceColumn: Vehicle_Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column Pickup_Location
+		dataType: string
+		lineageTag: d3bc47e6-8ad1-4272-906c-eb4d0d874708
+		summarizeBy: none
+		sourceColumn: Pickup_Location
+
+		annotation SummarizationSetBy = Automatic
+
+	column Drop_Location
+		dataType: string
+		lineageTag: ece80d7f-20c9-4494-aa6d-403bf6a33b7b
+		summarizeBy: none
+		sourceColumn: Drop_Location
+
+		annotation SummarizationSetBy = Automatic
+
+	column V_TAT
+		dataType: string
+		lineageTag: eb4cfd00-baed-48d8-b5f5-4ddd0ff25ae6
+		summarizeBy: none
+		sourceColumn: V_TAT
+
+		annotation SummarizationSetBy = Automatic
+
+	column C_TAT
+		dataType: string
+		lineageTag: 4d5cc70d-9bf6-4ea9-b30b-1e67029b598b
+		summarizeBy: none
+		sourceColumn: C_TAT
+
+		annotation SummarizationSetBy = Automatic
+
+	column Canceled_Rides_by_Customer
+		dataType: string
+		lineageTag: a32b177f-49fd-4523-a7e9-335dbc6274f6
+		summarizeBy: none
+		sourceColumn: Canceled_Rides_by_Customer
+
+		annotation SummarizationSetBy = Automatic
+
+	column Canceled_Rides_by_Driver
+		dataType: string
+		lineageTag: 77e9970c-6e18-42b7-8687-a8fa68b73d0c
+		summarizeBy: none
+		sourceColumn: Canceled_Rides_by_Driver
+
+		annotation SummarizationSetBy = Automatic
+
+	column Incomplete_Rides
+		dataType: string
+		lineageTag: 9d14aa75-1f92-4736-8aab-204277e4a3fe
+		summarizeBy: none
+		sourceColumn: Incomplete_Rides
+
+		annotation SummarizationSetBy = Automatic
+
+	column Incomplete_Rides_Reason
+		dataType: string
+		lineageTag: d20aedd1-a743-4d26-84c6-25999e208fd0
+		summarizeBy: none
+		sourceColumn: Incomplete_Rides_Reason
+
+		annotation SummarizationSetBy = Automatic
+
+	column Booking_Value
+		dataType: int64
+		formatString: 0
+		lineageTag: 1469ba9c-f10a-4ce7-9c77-e0a2c69a80e3
+		summarizeBy: sum
+		sourceColumn: Booking_Value
+
+		annotation SummarizationSetBy = Automatic
+
+	column Payment_Method
+		dataType: string
+		lineageTag: f267b677-9ada-4786-bb87-1a449f535fc4
+		summarizeBy: none
+		sourceColumn: Payment_Method
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ride_Distance
+		dataType: int64
+		formatString: 0
+		lineageTag: 9757b619-e606-4ecb-b984-9e73bf2ddd6d
+		summarizeBy: sum
+		sourceColumn: Ride_Distance
+
+		annotation SummarizationSetBy = Automatic
+
+	column Driver_Ratings
+		dataType: double
+		lineageTag: a32168f9-b6c6-4f5a-889e-0400f34d8be0
+		summarizeBy: sum
+		sourceColumn: Driver_Ratings
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Customer_Rating
+		dataType: double
+		lineageTag: 1db39e66-384b-47b6-bba0-78e6a48bb401
+		summarizeBy: sum
+		sourceColumn: Customer_Rating
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Vehicle Images'
+		dataType: string
+		lineageTag: ed0952e3-7ded-46f5-9c20-098808bad8e5
+		summarizeBy: none
+		sourceColumn: Vehicle Images
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'uber bookings' = m
+		mode: import
+		source =
+				let
+				    Source = MySQL.Database("localhost:3306", "UBER", [ReturnSingleDatabase=true]),
+				    uber_bookings = Source{[Schema="uber",Item="bookings"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(uber_bookings,{{"Driver_Ratings", type number}, {"Customer_Rating", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

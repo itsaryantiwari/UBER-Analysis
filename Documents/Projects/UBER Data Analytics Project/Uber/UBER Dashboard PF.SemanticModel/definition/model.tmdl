@@ -1,0 +1,22 @@
+model Model
+	culture: en-IN
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-IN
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["uber bookings"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.140.1205.0 (25.02)+2ab3defe107764e1cf486b42122d9362df7f34ea
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'uber bookings'
+ref table DateTableTemplate_7625c6b2-eb4d-4142-bd54-91df86d39f73
+ref table LocalDateTable_bc16e1a8-bd53-4c50-8080-78b8ef6aaa23
+
+ref cultureInfo en-IN
+

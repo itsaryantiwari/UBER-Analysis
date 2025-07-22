@@ -1,0 +1,5 @@
+relationship bdc180f8-ba74-43ce-9fa4-b305236a4cbd
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'uber bookings'.Date
+	toColumn: LocalDateTable_bc16e1a8-bd53-4c50-8080-78b8ef6aaa23.Date
+

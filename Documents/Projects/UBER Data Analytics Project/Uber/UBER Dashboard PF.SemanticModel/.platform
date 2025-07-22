@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "UBER Dashboard PF"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a7a2d293-e77c-4165-b29e-1579a57adbe1"
+  }
+}
