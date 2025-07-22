@@ -1,57 +1,47 @@
 # UBER Ride Booking Data Analysis Project
 
-This project simulates and analyses over **1,00,000+ UBER ride booking records** for Bengaluru, focusing on ride success rates, cancellation patterns, customer behaviour, and revenue trends.
+This project analyses over **100,000 simulated UBER ride bookings** in Bengaluru to uncover booking trends, cancellations, customer behaviour, and revenue patterns.
 
 ## Project Objective
-
-To perform comprehensive data analysis on UBER ride booking data to extract actionable business insights related to operational efficiency, customer satisfaction, and revenue optimisation.
-
-## Key Highlights
-
-- Generated a synthetic dataset with realistic booking constraints:
-  - **62% success rate**
-  - **<7% customer cancellations**
-  - **<18% driver cancellations**
-- Conducted SQL-based analysis to uncover:
-  - Booking patterns and success rates
-  - Top customers and ride distances by vehicle type
-  - Common reasons for cancellations and incomplete rides
-  - Revenue trends and booking volumes during peak periods (weekends, match days)
-- Developed **10+ SQL queries** and created **Power BI dashboards** for data visualization:
-  - Booking Status Breakdown
-  - Revenue by Payment Method
-  - Customer vs. Driver Ratings
-  - Peak Demand Analysis
-
-## Data Analysis Approach
-
-- Data Cleaning and Validation
-- SQL Queries for Data Exploration
-- Creation of SQL Views for optimised reporting
-- Dashboard Creation in Power BI for visualisation and trend analysis
+- Understand ride success rates, cancellations, and customer ratings
+- Identify revenue patterns and peak demand periods
 
 ## Tools Used
+- **SQL** — Data analysis and querying
+- **Power BI** — Dashboard creation
+- **Excel** — Data cleaning
 
-- **SQL** (Data Querying & Analysis)
-- **Power BI** (Data Visualization)
-- **Microsoft Excel** (Data Preparation & Cleaning)
+## Key Insights
+- **62% ride success rate**, with cancellations mostly due to driver or customer issues
+- Bookings rise **~30% on weekends and match days**
+- **Cash and UPI** are top payment methods
+- Average customer and driver ratings are near **4.0**
 
-## Key Findings
+## Visualisations Preview
 
-- Peak bookings increase by **~30% on weekends and match days**
-- Customer and driver cancellations are majorly influenced by service experience and operational issues
-- Higher revenue concentration observed during high-demand periods
+| Overall Bookings & Status | Vehicle-wise Analysis |
+|:---:|:---:|
+| ![Overall](./Screenshots/Screenshot_Overall.png) | ![Vehicle Type](./Screenshots/Screenshot_VehicleType.png) |
 
-## Visualizations
+| Revenue Breakdown | Cancellation Analysis | Ratings Overview |
+|:---:|:---:|:---:|
+| ![Revenue](./Screenshots/Screenshot_Revenue.png) | ![Cancellation](./Screenshots/Screenshot_Cancellation.png) | ![Ratings](./Screenshots/Screenshot_Ratings.png) |
 
-Included Power BI dashboards cover:
+## Project STAR Summary
 
-- Booking Trends Over Time
-- Cancellation Analysis
-- Revenue Insights
-- Customer & Driver Ratings Distribution
+- **Situation:** UBER’s platform faces variable booking success and cancellations affecting revenue and service.
+- **Task:** Analyse a dataset of **100K+ rides** to extract insights on booking trends, cancellations, and ratings.
+- **Action:** Built SQL queries and Power BI dashboards for insights on bookings, customer ratings, cancellations, and revenue.
+- **Result:** Provided actionable data visualisations revealing customer patterns, peak periods, and business insights.
 
 ---
 
-Thanks for Reading this out.
-For detailed SQL queries, dashboards, and data insights, check the project files in this repository.
+For full SQL queries, dashboards, and insights — check the repository files.
+
+---
+
+## About Me
+
+I’m **Aryaman Raj Tiwari**, a data analyst passionate about transforming data into actionable insights using **SQL**, **Power BI**, and **Excel**.
+
+📫 **Contact Me:** [LinkedIn](https://www.linkedin.com/in/itsaryantiwari) | i.aryantiwari@gmail.com
