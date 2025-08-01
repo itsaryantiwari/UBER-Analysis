@@ -43,12 +43,12 @@ This project analyses over **100,000 simulated UBER ride bookings** in Bengaluru
 
 ---
 
-For full SQL queries, dashboards, and insights — check the repository files.
+For full SQL queries, dashboards, and insights — check the repository files [Github Repo☺️](https://github.com/itsaryantiwari/UBER-Data-Analysis-Project).
 
 ---
 
 ## About Me
 
-I’m **Aryaman Raj Tiwari**, a data analyst passionate about transforming data into actionable insights using **SQL**, **Power BI**, and **Excel**.
+I’m **Aryaman Raj Tiwari**, an eager data analyst who loves to transform data into actionable insights using **SQL**, **Python**, **Power BI**, and **Excel**.
 
-📫 **Contact Me:** [LinkedIn](https://www.linkedin.com/in/itsaryantiwari) | i.aryantiwari@gmail.com
+📫 **Contact Me:** [LinkedIn](https://www.linkedin.com/in/itsaryantiwari) | [Mail](mailto:i.aryantiwari@gmail.com)
